@@ -15,8 +15,7 @@ on:
   workflow_dispatch:
 
   jobs:
-    sonarCloudTrigger:
-      name: SonarCLoud Trigger
+    build:
       runs-on: ubuntu-latest
       steps:
         - name: Clone Repo
