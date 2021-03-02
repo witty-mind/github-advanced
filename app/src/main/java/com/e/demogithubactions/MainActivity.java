@@ -59,4 +59,14 @@ public class MainActivity extends AppCompatActivity {
     public void printValue(String value) {
         Log.d("This is a Log", value);
     }
+
+
+    /**
+     * This function is responsible for displaying toast message
+     *
+     * @param value
+     */
+    public void showToast(String value) {
+        Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
+    }
 }
