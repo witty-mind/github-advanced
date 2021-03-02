@@ -14,14 +14,14 @@ on:
   # Allow the actions to run manually from the actions tab.
   workflow_dispatch:
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Clone Repo
-          uses: actions/checkout@v2
-        - name: Analyze with Sonar cloud
-          uses: sonarsourse/sonarcloud-github-actions@v1.3
-          env:
-            GITHUB_TOKEN: ${{secrets.GH_PERSONAL_TOKEN}}
-            SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v2
+      - name: Analyze with Sonar cloud
+        uses: sonarsourse/sonarcloud-github-actions@v1.3
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_PERSONAL_TOKEN}}
+          SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
