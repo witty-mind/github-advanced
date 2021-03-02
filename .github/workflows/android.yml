@@ -9,6 +9,10 @@ on:
       - '*'
       - 'development'
       - '!release*'
+      
+      
+  # Allow the actions to run manually from the actions tab. 
+  workflow_dispatch:
 
 jobs:
   build:
