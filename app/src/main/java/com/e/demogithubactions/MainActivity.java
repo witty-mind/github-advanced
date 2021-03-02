@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             Demo temp = new Demo(0.0, 0.0);
             temp.my_real = n1.my_real + n2.my_real;
             temp.my_imag = n1.my_imag + n2.my_imag;
+            Log.d("This is done", "Yes");
             return(temp);
         }
     }
