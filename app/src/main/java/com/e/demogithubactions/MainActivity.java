@@ -3,6 +3,7 @@ package com.e.demogithubactions;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -41,9 +42,21 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("Buzz");
             } else if (i % 5 == 0 && i % 3 == 0) {
                 System.out.println("FizzBuzz");
+                printValue("FizzBuzz");
             } else {
                 System.out.println(i + "");
+                printValue(i + "");
             }
         }
+    }
+
+
+    /**
+     * Function responsible for logging the given value
+     *
+     * @param value
+     */
+    public void printValue(String value) {
+        Log.d("This is a Log", value);
     }
 }
