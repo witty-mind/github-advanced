@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
             Toast.makeText(this, "Data added to array successfully", Toast.LENGTH_SHORT).show();
         } catch (Exception ex) {
+            Toast.makeText(this, "There was an error with Data Insertation", Toast.LENGTH_SHORT).show();
             ex.printStackTrace();
         }
     }
