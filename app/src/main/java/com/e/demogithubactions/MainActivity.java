@@ -13,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         addData();
+
+        solveFizzBuzz();
     }
 
     // Function responsible for adding data to the array
@@ -27,6 +30,21 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception ex) {
             Toast.makeText(this, "There was an error with Data Insertation", Toast.LENGTH_SHORT).show();
             ex.printStackTrace();
+        }
+    }
+
+    // Function responsible for solving the fizz buzz problem
+    public void solveFizzBuzz() {
+        for (int i = 0; i < 100; i++) {
+            if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Bizz");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(i + "");
+            }
         }
     }
 }
