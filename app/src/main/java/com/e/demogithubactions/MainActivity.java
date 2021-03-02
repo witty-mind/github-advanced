@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addData();
+
+
+        //There is your new Access Key: 9TD71Y1EV5BIFV6CH59S
+
+        //There is your new Secret Key: iw5Za1rJxUDEom0xDfWq
     }
 
     // Function responsible for adding data to the array
