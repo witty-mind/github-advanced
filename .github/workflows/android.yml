@@ -33,7 +33,7 @@ jobs:
           verbose: true # optional (default = false)
           
       - name: Grant execute permission for gradlew
-        run: bash chmod +x gradlew
+        run: chmod +x gradlew
         
       - name: Build with Gradle
         run: ./gradlew build
