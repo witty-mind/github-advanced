@@ -93,26 +93,7 @@ public class MainActivity extends AppCompatActivity {
             temp.my_real = n1.my_real + n2.my_real;
             temp.my_imag = n1.my_imag + n2.my_imag;
             Log.d("This is done", "Yes");
-            return (temp);
         }
-    }
-
-    // Function to check prime numbers
-    public void checkPrimeNumber() {
-        int num = 29;
-        boolean flag = false;
-        for (int i = 2; i <= num / 2; ++i) {
-            // condition for nonprime number
-            if (num % i == 0) {
-                flag = true;
-                break;
-            }
-        }
-
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
     }
 
     // Function responsible for checking the number is positive or negative
@@ -130,5 +111,23 @@ public class MainActivity extends AppCompatActivity {
             // if both test expression is evaluated to false
         else
             System.out.println(number + " is 0.");
+    }
+
+    // Function to check prime numbers
+    public void checkPrimeNumber(){
+        int num = 29;
+        boolean flag = false;
+        for (int i = 2; i <= num / 2; ++i) {
+            // condition for nonprime number
+            if (num % i == 0) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
     }
 }
